@@ -1,15 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buying Macbook</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 </head>
+
 <body>
+    <header></header>
     <main>
-        
+        <section class="mt-5">
+            <div class="row px-4">
+                <div class="col-6">
+                    <img src="images/mac.png" class="img-fluid" alt="" />
+                </div>
+                <div class="col-6">
+                    <div>
+                        <h1>Customize your Blue-24 iMac with Apple M1 chip</h1>
+                    </div>
+                    <div>
+                        <p>
+                            Apple M1 chip with 8-core CPU with 4 performance cores and 4
+                            efficiency cores, 7-core GPU, and 16-core Neural Engine.Get
+                            credit toward a new Mac when you trade in your eligible
+                            computer. Or recycle it for free.
+                        </p>
+                    </div>
+                    <!-- Memory -->
+                    <div class="mt-5">
+                        <h3>Memory</h3>
+                        <button id="first-memory" type="button" class="btn btn-secondary">
+                            8Gb unifield Memory
+                        </button>
+                        <button  id="second-memory" type="button" class="btn btn-secondary">
+                            16Gb unifield Memory
+                        </button>
+                    </div>
+                    <!-- Storage -->
+                    <div class="mt-5">
+                        <h3>Storage</h3>
+                        <button  id="first-storage" type="button" class="btn btn-secondary">
+                            256Gb ssd Storage
+                        </button>
+                        <button id="second-storage" type="button" class="btn btn-secondary">
+                            512Gb ssd Storage
+                        </button>
+                        <button id="third-storage" type="button" class="btn btn-secondary">
+                            1TB ssd Storage
+                        </button>
+                    </div>
+                    <!-- Delivery options -->
+                    <div class="mt-5">
+                        <h3>Chooese your delivery Options</h3>
+                        <button id="first-delivery" type="button" class="btn btn-secondary">
+                            Friday, 25 Aug FREE primary Delivery
+                        </button>
+                        <button id="second-delivery" type="button" class="btn btn-secondary">
+                            Friday, 21 Aug Delivery Charge 20$
+                        </button>
+                    </div>
+                    <div class="mt-5">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Best Price</th>
+                                    <td id="base-price">1299</td>
+                                </tr>
+                                <tr>
+                                    <th>Extra Memory Cost</th>
+                                    <td id="extra-memory-cost">0</td>
+                                </tr>
+                                <tr>
+                                    <th>Extra Storage Cost</th>
+                                    <td id="extra-storage-cost">0</td>
+                                </tr>
+                                <tr>
+                                    <th>Delivery charge</th>
+                                    <td id="delivery-charge">0</td>
+                                </tr>
+                                <tr>
+                                    <th>Total price</th>
+                                    <td id="total-price">1299</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h5>Add Promo Code</h5>
+                        <input id="promo-code" type="text" />
+                        <button id="apply" class="btn btn-danger">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
