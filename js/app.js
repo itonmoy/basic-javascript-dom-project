@@ -83,6 +83,7 @@ function updateValues() {
     finalValue = parseFloat(totalPrice.innerText);
     grandTotal.innerText = finalValue;
 }
+// final part 
 var finalValue = 0;
 applyPromoCode.addEventListener('click', function () {
     updateValues();
