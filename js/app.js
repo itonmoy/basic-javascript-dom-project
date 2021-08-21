@@ -12,6 +12,7 @@ const extraStorageCost = document.getElementById('extra-storage-cost');
 const deliveryCharge = document.getElementById('delivery-charge');
 const promoCode = document.getElementById('promo-code');
 const applyPromoCode = document.getElementById('apply-promo__code');
+const grandTotal = document.getElementById("grand-total");
 
 
 
@@ -79,14 +80,20 @@ function updateValues() {
     const storageCostingTotal = parseInt(extraStorageCost.innerText)
     const deliveryChargeTotal = parseInt(deliveryCharge.innerText);
     totalPrice.innerText = basePricing + memoryCostingTotal + storageCostingTotal + deliveryChargeTotal;
+    finalValue = parseFloat(totalPrice.innerText);
+    grandTotal.innerText = finalValue;
 }
+var finalValue = 0;
+applyPromoCode.addEventListener('click', function () {
+    updateValues();
+    const promoCodeText = promoCode.value;
+    if (promoCodeText == "stevekaku") {
+        finalValue = finalValue * 0.8;
+        grandTotal.innerText = finalValue;
 
-// promoCode.addEventListener('click', function(){
-//     console.log('promo code')
-// })
-
-promoCode.addEventListener('click', function(){
-    if(applyPromoCode == "stevekaku"){
-        
     }
+    promoCode.value = " ";
 })
+
+
+
