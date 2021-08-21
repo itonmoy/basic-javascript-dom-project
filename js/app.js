@@ -11,7 +11,7 @@ const extraMemoryCost = document.getElementById('extra-memory-cost');
 const extraStorageCost = document.getElementById('extra-storage-cost');
 const deliveryCharge = document.getElementById('delivery-charge');
 const promoCode = document.getElementById('promo-code');
-const apply = document.getElementById('apply');
+const applyPromoCode = document.getElementById('apply-promo__code');
 
 
 
@@ -84,3 +84,9 @@ function updateValues() {
 // promoCode.addEventListener('click', function(){
 //     console.log('promo code')
 // })
+
+promoCode.addEventListener('click', function(){
+    if(applyPromoCode == "stevekaku"){
+        
+    }
+})
